@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  @import '~antd/dist/antd.css';
   * {
     margin: 0; 
     padding: 0;

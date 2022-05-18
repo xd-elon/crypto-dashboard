@@ -1,15 +1,9 @@
 import { Badge } from "antd";
-import { IoExitOutline, IoNotifications } from "react-icons/io5"
-import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai"
+import { IoExitOutline, IoNotifications } from "react-icons/io5";
+import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 import {
-  LineChart,
-  Line,
   AreaChart,
-  YAxis,
   Area,
-  CartesianGrid,
-  XAxis,
-  Tooltip
 } from 'recharts';
 
 import { 
@@ -22,7 +16,9 @@ import {
   ContainerStats,
   MiningBalancesStatus,
   TransactionsStatics,
-  TodayAndCurrentStats
+  TodayAndCurrentStats,
+  CryptoCurreniesStatus,
+  SectionsCards
 } from "./style";
 
 import imgPerfil from "../../img/human.svg";
@@ -230,16 +226,54 @@ export function Dashboard() {
             </div>
             <div className="CurreniesStats">
             <span>Currenies Status</span>
-              <div className="">
-
+            <CryptoCurreniesStatus>
+              <div className="CriptoCardADX">
+                <div className="headerAmount">
+                  <span className="titleCurrenies">ADX</span>
+                  <span className="valuesCurrenies">$3300 USD</span>
+                </div>
+                <div className="graphCurrenies">
+                  <AreaChart  width={110} height={25} data={data}
+                      margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                      <Area type="monotone" dataKey="pv" stroke="#FFF" fillOpacity={1} fill="url(#colorPv)" />
+                  </AreaChart>
+                </div>
+                <div className="totalAmountCurrenies">
+                  120.234 ADX
+                </div>
               </div>
+              <div className="CriptoCardBTC">
+                <div className="headerAmount">
+                  <span className="titleCurrenies">BTC</span>
+                  <span className="valuesCurrenies">$4200 USD</span>
+                </div>
+                <div className="graphCurrenies">
+                  <AreaChart  width={110} height={25} data={data}
+                      margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                      <Area type="monotone" dataKey="pv" stroke="#FFF" fillOpacity={1} fill="url(#colorPv)" />
+                  </AreaChart>
+                </div>
+                <div className="totalAmountCurrenies">
+                  1.99212 BTC
+                </div>
+              </div>
+            </CryptoCurreniesStatus>
             </div>
           </TodayAndCurrentStats>
           </TodayStats>
           <ContainerStats>
             <MiningBalancesStatus>
-              mining
-  
+              <SectionsCards>
+                <span className="miningTitle">Mining Status</span>
+                <div className="miningBox">
+
+                </div>
+              </SectionsCards>
+              <SectionsCards>
+                <span className="miningTitle">My Balances</span>
+                <div className="balancesBox">
+                </div>
+              </SectionsCards>
             </MiningBalancesStatus>
             <TransactionsStatics>
               transactions

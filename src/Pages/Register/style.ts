@@ -14,8 +14,8 @@ export const BoxOne = styled.div`
   flex: 2;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+
 `;
 
 export const BoxTwo = styled.div`
@@ -36,6 +36,7 @@ export const FormBox = styled.div`
   //background-color: #AAE8DF;
   height: 75vh;
   width: 380px;
+  margin-top: 5%;
 
   display: flex;
   flex-direction: column;
