@@ -22,42 +22,11 @@ export const ContainerStats = styled.div`
   width: 76vw;
   height: 94vh;
 `;
-export const MiningBalancesStatus = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  border-bottom: 1px solid #E7E8FC;
-`;
+
 export const TransactionsStatics = styled.div`
   display: flex;
   flex-direction: row;
   flex: 1;
-`;
-export const SectionsCards = styled.div`
-  padding: 30px 10px 0 30px;
-  
-  .miningTitle {
-    font-size: 15px;
-    margin-top: 25px;
-    font-weight: bold;
-  }
-  .miningBox {
-    margin-top: 10px;
-    width: 450px;
-    height: 180px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .balancesBox {
-    margin-top: 10px;
-    //background-color: red;
-    width: 400px;
-    height: 180px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 `;
 export const SectionsCardsTwo = styled.div`
   padding: 30px 10px 0 30px;
@@ -81,7 +50,6 @@ export const SectionsCardsTwo = styled.div`
     height: 200px;
   }
 `;
-
 // 
 export const GPUandCPUContainer = styled.div`
   //border: 1px solid red;
@@ -173,11 +141,4 @@ export const GPUandCPUContainer = styled.div`
       }
     }
   }
-`;
-export const ViatContainer = styled.div`
-  border: 1px solid red;
-  display: flex; 
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
 `;

@@ -1,5 +1,7 @@
 import { Switch } from "antd";
+import { AiOutlineTeam } from "react-icons/ai";
 import { BsCpu } from "react-icons/bs";
+import { MdCalendarToday } from "react-icons/md";
 import { GPUandCPUContainer} from "./style";
 
 export function CPUandDaily() {
@@ -36,7 +38,7 @@ export function CPUandDaily() {
     <GPUandCPUContainer>
     <div className="dailyTeam">
         <div className="iconDailyTeamContainer">
-          <BsCpu size={25} color="#fff"/>
+          <MdCalendarToday size={25} color="#fff"/>
         </div>
         <div className="dailyTeamText">
           <span>Est. daily USD</span>
@@ -46,7 +48,7 @@ export function CPUandDaily() {
 
       <div className="dailyTeam">
         <div className="iconDailyTeamContainertwo">
-          <BsCpu size={25} color="#fff"/>
+          <AiOutlineTeam size={25} color="#fff"/>
         </div>
         <div className="dailyTeamText">
           <span>Team Members</span>

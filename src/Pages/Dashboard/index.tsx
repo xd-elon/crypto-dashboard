@@ -1,46 +1,30 @@
+import { AiFillCreditCard, AiOutlinePlus } from "react-icons/ai";
+import { MdAddCircleOutline, MdEuroSymbol, MdOutlineAttachMoney } from "react-icons/md";
 
 import { 
   Container, 
   ContentContainer, 
   SectionContent,
   ContainerStats,
-  MiningBalancesStatus,
   TransactionsStatics,
-  SectionsCards,
-  SectionsCardsTwo,
-  ViatContainer
+  SectionsCardsTwo
 } from "./style";
 
 import { LateralBar } from "../components/LateralBar";
 import { HeaderBar } from "../components/HeaderBar";
 import { TodayStatus } from "../components/TodayStatus";
-import { CPUandDaily } from "../components/CPUandDaily";
+import { MiningAndBalances } from "../components/MiningAndBalances";
 
 export function Dashboard() {
   return (
     <Container>
-      <LateralBar />
+      <LateralBar /> {/* component */}
       <ContentContainer>
-      <HeaderBar />
+      <HeaderBar /> {/* component */}
         <SectionContent>
-          <TodayStatus />
+          <TodayStatus /> {/* component */}
           <ContainerStats>
-            <MiningBalancesStatus>
-              <SectionsCards>
-                <span className="miningTitle">Mining Status</span>
-                <div className="miningBox">
-                  <CPUandDaily />
-                </div>
-              </SectionsCards>
-              <SectionsCards>
-                <span className="miningTitle">My Balances</span>
-                <div className="balancesBox">
-                  <ViatContainer></ViatContainer>
-                  <ViatContainer></ViatContainer>
-                </div>
-              </SectionsCards>
-            </MiningBalancesStatus>
-
+            <MiningAndBalances /> {/* component */}
             <TransactionsStatics>
               <SectionsCardsTwo>
                 <span className="Title">Transaction Activity</span>
