@@ -7,12 +7,14 @@ import {
   MiningBalancesStatus,
   TransactionsStatics,
   SectionsCards,
-  SectionsCardsTwo
+  SectionsCardsTwo,
+  ViatContainer
 } from "./style";
 
 import { LateralBar } from "../components/LateralBar";
 import { HeaderBar } from "../components/HeaderBar";
 import { TodayStatus } from "../components/TodayStatus";
+import { CPUandDaily } from "../components/CPUandDaily";
 
 export function Dashboard() {
   return (
@@ -27,26 +29,28 @@ export function Dashboard() {
               <SectionsCards>
                 <span className="miningTitle">Mining Status</span>
                 <div className="miningBox">
-
+                  <CPUandDaily />
                 </div>
               </SectionsCards>
               <SectionsCards>
                 <span className="miningTitle">My Balances</span>
                 <div className="balancesBox">
+                  <ViatContainer></ViatContainer>
+                  <ViatContainer></ViatContainer>
                 </div>
               </SectionsCards>
             </MiningBalancesStatus>
+
             <TransactionsStatics>
               <SectionsCardsTwo>
-                <span className="miningTitle">Transaction Activity</span>
-                <div className="miningBox">
+                <span className="Title">Transaction Activity</span>
+                <div className="transactionBox">
 
                 </div>
               </SectionsCardsTwo>
               <SectionsCardsTwo>
-                <span className="miningTitle">Statistics</span>
-                <div className="miningBox">
-
+                <span className="Title">Statistics</span>
+                <div className="staticsbox">
                 </div>
               </SectionsCardsTwo>
             </TransactionsStatics>
