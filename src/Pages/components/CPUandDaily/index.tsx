@@ -26,7 +26,7 @@ export function CPUandDaily() {
         <BsCpu size={25} color="#fff"/>
       </div>
       <div className="cpuBox">
-        <span>GPUs mining</span>
+        <span>CPUs mining</span>
         <p>Running...</p>
       </div>
       <div className="checkBox">

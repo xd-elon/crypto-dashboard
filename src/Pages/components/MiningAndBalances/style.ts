@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MiningBalancesStatus = styled.div`
   display: flex;
   flex-direction: row;
-  flex: 0.8;
+  flex: 0.75;
   border-bottom: 1px solid #E7E8FC;
 `;
 export const SectionsCards = styled.div`
@@ -59,8 +59,6 @@ export const SectionsCards = styled.div`
     justify-content: space-between;
   }
 `;
-
-
 export const FiatContainer = styled.div`
   //border: 1px solid red;
   display: flex; 
